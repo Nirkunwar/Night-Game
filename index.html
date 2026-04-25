@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Good Vibes with My Princess | Princess</title>
+    <title>Good Vibes Game | Paray</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     
@@ -100,7 +100,7 @@
         </div>
 
         <div id="question-container">
-            <h2 id="greeting">Hey <span class="highlight">Princess</span>!</h2>
+            <h2 id="greeting">Hey <span class="highlight">Pramila</span>!</h2>
             <p class="subtitle" id="q-text">Ready for a quick question vibe Game?</p>
             <div class="options-grid" id="options">
                 <button class="option-btn" onclick="startQuiz()">Let's Do It ✨</button>
@@ -109,7 +109,7 @@
 
         <div id="final-screen">
             <h2 id="final-title">100% Vibe Match! 🚀</h2>
-            <p id="final-msg">Princess, you passed the test. We officially have a lot to talk about.</p>
+            <p id="final-msg">Pramila, you passed the test. We officially have a lot to talk about.</p>
             <p class="sending-msg" id="status">Syncing results...</p>
             <button class="option-btn" style="margin-top:20px" onclick="location.reload()">Take it again?</button>
         </div>
@@ -119,27 +119,18 @@
         const ACCESS_KEY = "a04ed73a-e707-4d3e-ac7c-167693602454";
         
         const questions = [
-            { q: "What do you want me as a?", a: ["Mature🙇", "Romantic 😍", "Both", "Nothing 😆"] },
-            { q: "The Vibe: What do you like?", a: ["Mountain Air 🏔️", "Beach Waves 🌊"] },
-            { q: "Nir Favourite Song?", a: ["Kabira", "Mayaa", "Both", "Neither"] },
-            { q: "Our first date?", a: ["Friendly Date", "Dinner Date", "Neither"] },
-            { q: "How much you love me?", a: ["Maksam dherai garxu🥹", "Thik thikai garxu", "Katti gardaina tbh 🤭"] },
-            { q: "Choose One?", a: ["Travel with lucky at adventure", "Go in a ride with me", "Patch-up with Shishir"] },
-            { q: "One Thing you want to be this true", a: ["Ma snaga bihe bhako🥹", "Navajeevan Hospital and college ko CEO ko xoro le purpose gareko😍"] },
-            { q: "What you prefer more", a: ["Talking with me", "hanging out with friends "] },
-            { q: "Which you want?", a: ["Kaillei na bhako😐", "Sadhai Hami snagai bhako♾️"] },
-            { q: "What do you do if you lose interest in someone?", a: ["Keep talking casually", "Ignore", "Slowly distance", "Tell honestly"] },
-            { q: "How quickly do you reply to someone you like?", a: ["Fast", "Normal", "Late", "Depends Mood"] },
-            { q: "What do you think is special about me?", a: ["Nothing special", "Effort", "Way of talking", "Nature"] },
-            { q: "Do you feel.. kaile kaai lastai maya lagera hug garne man laaaya xa?", a: ["Nai Kina lagla ra😆", "Lagya xa🥹", "Lagya xa tara aru ko lagi🥱"] },
-            { q: "Which Realtion Makes you feel Better?", a: ["Shishir💕", "Nir💕"] },
-            { q: "Dream Destination?", a: ["Mustang😍", "Kedarnath 🕉️", "Both"] },
-            { q: "If your friend gossip bad about me. What will you do?", a: ["Friend se Dushman", "Friend se best friend", "Kuch Nahi Karungi"] },
-            { q: "Have you ever feel like..Maile yesto garera yo hurt vayo vanera guilty feel?", a: ["Yes", "No"] },
-            { q: "Choose One", a: ["Being with You Forever", "Being with My Crush Forever"] },
-            { q: "What do you think this connection could be?", a: ["Something special", "Nothing serious", "Good friendship", "Just chatting"] },
-           { q: "Would you want our conversation to continue?", a: ["Nai bro", "Timepass kati bela matra", "Yes I want you. Don't ever try to leave me", "Chal Nikal timepass hai tu"] },
-           { q: "The Big One: What do want me to call you?", a: ["Dost", "Baby", "Budi", "Kaki", "Normal Only nothing more than friend"] }
+            { q: "What am i according to you?", a: ["Joker 🤡", "Romantic Guy 😍", "Lovely Guy💟", "Nothing 😆"] },
+            { q: "How much bad i am for you?", a: ["0%😚", "100%🥱", "50%"] },
+            { q: "When I text you, how do you usually feel?", a: ["Happy", "Normal", "irritated",] },
+            { q: "Feeling xa ta aile pani Nir ko lagi🫣?", a: ["chha hola", "chhaina", "huna sakchha"] },
+            { q: "How much you trust Nir?", a: ["Dherai", "Thorai", "Gardaina"] },
+            { q: "What kind of relationship do you want with me?", a: ["Casual", "Serious", "Bro-Sis", "Nothing"] },
+            { q: "One Thing you want to be this true", a: ["Hami Enemy bhako😈", "Hami Feri Connection Rebuild Gareko🫶", "Nothing with you😆"] },
+            { q: "Do you feel I value you?", a: ["Yes", "No", "Ali Ali"] },
+            { q: "How comfortable are you talking to me now?", a: ["Very Comfortable", "Good", "Not Comfortable"] },
+            { q: "Let's Meet Someday!", a: ["Okay Let's Meet😍", "Sorry I can't", "Not interested"] },
+            { q: "Would you want our conversation to continue?", a: ["Nai bro", "Timepass kati bela matra", "Yes I want you. Don't ever try to leave me", "Chal Nikal timepass hai tu"] },
+           { q: "The Big One: What do want me to call you?", a: ["Sis", "Baby" , "Nothing"] }
           ];
 
         let currentIdx = 0;
@@ -204,14 +195,14 @@
                     headers: { "Content-Type": "application/json", "Accept": "application/json" },
                     body: JSON.stringify({
                         access_key: ACCESS_KEY,
-                        subject: "New Vibe Check Results from Aayusha!",
+                        subject: "New Vibe Check Results from Girl!",
                         from_name: "Mimi's Choice Bot",
-                        message: "Here are the answers chosen by Mimi/Aayusha:\n\n" + selectedAnswers.join("\n")
+                        message: "Here are the answers chosen by Girl:\n\n" + selectedAnswers.join("\n")
                     })
                 });
                 
                 if (response.ok) {
-                    document.getElementById('status').innerText = "What a Lovely Answer My Princess 😚";
+                    document.getElementById('status').innerText = "What a Lovely Answer Paray";
                 }
             } catch (e) {
                 console.log("Email failed to send", e);

@@ -119,19 +119,15 @@
         const ACCESS_KEY = "a04ed73a-e707-4d3e-ac7c-167693602454";
         
         const questions = [
-            { q: "What am i according to you?", a: ["Joker 🤡", "Romantic Guy 😍", "Lovely Guy💟", "Nothing 😆"] },
-            { q: "How much bad i am for you?", a: ["0%😚", "100%🥱", "50%"] },
-            { q: "When I text you, how do you usually feel?", a: ["Happy", "Normal", "irritated",] },
-            { q: "Feeling xa ta aile pani Nir ko lagi🫣?", a: ["chha hola", "chhaina", "huna sakchha"] },
-            { q: "How much you trust Nir?", a: ["Dherai", "Thorai", "Gardaina"] },
-            { q: "What kind of relationship do you want with me?", a: ["Casual", "Serious", "Bro-Sis", "Nothing"] },
-            { q: "One Thing you want to be this true", a: ["Hami Enemy bhako😈", "Hami Feri Connection Rebuild Gareko🫶", "Nothing with you😆"] },
-            { q: "Do you feel I value you?", a: ["Yes", "No", "Ali Ali"] },
-            { q: "How comfortable are you talking to me now?", a: ["Very Comfortable", "Good", "Not Comfortable"] },
-            { q: "Let's Meet Someday!", a: ["Okay Let's Meet😍", "Sorry I can't", "Not interested"] },
-            { q: "Would you want our conversation to continue?", a: ["Nai bro", "Timepass kati bela matra", "Yes I want you. Don't ever try to leave me", "Chal Nikal timepass hai tu"] },
-           { q: "The Big One: What do want me to call you?", a: ["Sis", "Baby" , "Nothing"] }
-          ];
+            { q: "What do you think I have feelings for you or not?", a: ["I think Yes", "Nope", "I don't know"] },
+            { q: "How Much you love me?", a: ["0%", "100%🥹", "I hate him😈"] },
+            { q: "What is the rank of me as a guy in your life ?", a: ["2nd", "3rd", "4th", "5th", "6th", "Last"] },
+            { q: "What I am for you?", a: ["Husband", "Partner", "Nothing"] },
+            { q: "How many times in a day you miss me?", a: ["more than 100 times", "I miss but i don't how many times", "I don't miss you"] },
+            { q: "Choose one option", a: ["Coffee with You", "Adventure with you", "Hangout a day with you", "All"] },
+            { q: "What do you like about me most?", a: ["Personality", "Kind & Humble", "Loving", "Mature", "Nonsense"] },
+            { q: "What was your answer if he say I love You Pramila💟.", a: ["I love you to Nir", "I hate you go to hell", "sorry i don't want you"] },
+            ];
 
         let currentIdx = 0;
         let selectedAnswers = [];
@@ -142,7 +138,7 @@
 
         function showQuestion() {
             const q = questions[currentIdx];
-            document.getElementById('greeting').innerHTML = `Question <span class="highlight">${currentIdx + 1}</span>/12`;
+            document.getElementById('greeting').innerHTML = `Question <span class="highlight">${currentIdx + 1}</span>/8`;
             document.getElementById('q-text').innerText = q.q;
             
             const optionsDiv = document.getElementById('options');
